@@ -10,50 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <style>
-        .carousel {
-            height: 690px !important;
-        }
-        .section {
-            padding-top: 2vw;
-            padding-bottom: 2vw;
-        }
-        
-        h2 {
-            font-size: 45px;
-            padding-bottom: 2vw;
-        }
-        
-        h3 {
-            font-size: 35px;
-        }
-        
-        p {
-            font-size: 20px;
-            font-weight: 500;
-        }
-        
-        span {
-            font-size: 22px;
-            font-weight: 600;
-        }
-        
-        .card {
-            transition: 0.5s;
-        }
-        
-        .card:hover {
-            transform: scale(1.05);
-        }
-        
-        #review {
-            width: 25%;
-        }
-        
-        #tab {
-            margin-left: 15vw;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -77,7 +34,7 @@
                 <li>
                     <a href="#" class="dropdown-trigger" data-target="dropdown"><b>BOOKING</b></a>
                     <ul id="dropdown" class="dropdown-content">
-                        <li><a href="booking.php" class="brown-text">ROOM BOOKING</a></li>
+                        <li><a href="roombooking.php" class="brown-text">ROOM BOOKING</a></li>
                         <li class="divider"></li>
                         <li><a href="eventbooking.php" class="brown-text">EVENT BOOKING</a></li>
                         <li class="divider"></li>
@@ -87,7 +44,7 @@
                 <li>
                     <a href="#" class="dropdown-trigger" data-target="dropdown1"><b>RESERVED</b></a>
                     <ul id="dropdown1" class="dropdown-content">
-                        <li><a href="mybooking.php" class="brown-text">ROOM BOOKING DETAILS</a></li>
+                        <li><a href="roomtable.php" class="brown-text">ROOM BOOKING DETAILS</a></li>
                         <li class="divider"></li>
                         <li><a href="eventtable.php" class="brown-text">EVENT BOOKING DETAILS</a></li>
                         <li class="divider"></li>
@@ -118,7 +75,17 @@
                     <a href="gallery.php"><b>GALLERY</b></a>
                 </li>
                 <li>
-                    <a href="booking.php"><b>BOOKING</b></a>
+                    <a href="roombooking.php"><b>BOOKING</b></a>
+                </li>
+                <li>
+                    <a href="#" class="dropdown-trigger" data-target="dropdown2"><b>RESERVED</b></a>
+                    <ul id="dropdown2" class="dropdown-content">
+                        <li><a href="roomtable.php" class="brown-text">ROOM BOOKING DETAILS</a></li>
+                        <li class="divider"></li>
+                        <li><a href="eventtable.php" class="brown-text">EVENT BOOKING DETAILS</a></li>
+                        <li class="divider"></li>
+                        <li><a href="packagetable.php" class="brown-text">PACKAGE BOOKING DETAILS</a></li>
+                    </ul>
                 </li>
                 <li>
                     <a href="#about"><b>ABOUT</b></a>
@@ -137,7 +104,7 @@
             <a class="carousel-item" href="#one!"><img src="images/img4.jpg"></a>
             <a class="carousel-item" href="#two!"><img src="images/img1.jpg"></a>
             <a class="carousel-item" href="#three!"><img src="images/img2.jpg"></a>
-            <a class="carousel-item" href="#four!"><img src="images/service.png"></a>
+            <a class="carousel-item" href="#four!"><img src="images/imgg.jpg"></a>
             <a class="carousel-item" href="#five!"><img src="images/img5.jpg"></a>
         </div>
     </section>
@@ -161,7 +128,7 @@
                     <h3 class="brown-text text-darken-1"><b>SINGLE</b></h3>
                     <p>These provide you a single accommodation with balcony and provides a comfortable luxury feel.</p>
                     <a href="#" class="btn-small brown z-depth-2"> <strong>COST : &#8377;3200</strong></a><br><br>
-                    <a href="booking.php"><button class="btn brown waves-effect waves-light z-depth-3" type="submit" name="action">Book Now<i class="material-icons right">fast_forward</i></button></a>
+                    <a href="roombooking.php"><button class="btn brown waves-effect waves-light z-depth-3" type="submit" name="action">Book Now<i class="material-icons right">fast_forward</i></button></a>
                 </div>
             </div>
             <div class="row">
@@ -173,7 +140,7 @@
                     <p>These provide you a double accommodation with balcony and provides a comfortable luxury feel.
                     </p>
                     <a href="#" class="btn-small brown z-depth-2"> <strong>COST : &#8377;3800</strong></a><br><br>
-                    <a href="booking.php"><button class="btn brown waves-effect waves-light z-depth-3" type="submit" name="action">Book Now<i class="material-icons right">fast_forward</i></button></a>
+                    <a href="roombooking.php"><button class="btn brown waves-effect waves-light z-depth-3" type="submit" name="action">Book Now<i class="material-icons right">fast_forward</i></button></a>
                 </div>
             </div>
             <div class="row">
@@ -184,7 +151,7 @@
                     <h3 class="brown-text text-darken-1 "><b>TRIPLE</b></h3>
                     <p>These provide you a triple accommodation with balcony and provides a comfortable luxury feel.</p>
                     <a href="#" class="btn-small brown z-depth-2"> <strong>COST : &#8377;4500</strong></a><br><br>
-                    <a href="booking.php"><button class="btn brown waves-effect waves-light z-depth-3" type="submit" name="action">Book Now<i class="material-icons right">fast_forward</i></button></a>
+                    <a href="roombooking.php"><button class="btn brown waves-effect waves-light z-depth-3" type="submit" name="action">Book Now<i class="material-icons right">fast_forward</i></button></a>
                 </div>
             </div>
             <div class="row">
@@ -195,7 +162,7 @@
                     <h3 class="brown-text text-darken-1 "><b>LUXURY</b></h3>
                     <p>These premium rooms with a private verandah face the swimming pool and have two inter-connected rooms and a spacious living room perfect for families and friends.</p>
                     <a href="#" class="btn-small brown z-depth-2"> <strong>COST : &#8377;5000</strong></a><br><br>
-                    <a href="booking.php"><button class="btn brown waves-effect waves-light z-depth-3" type="submit" name="action">Book Now<i class="material-icons right">fast_forward</i></button></a>
+                    <a href="roombooking.php"><button class="btn brown waves-effect waves-light z-depth-3" type="submit" name="action">Book Now<i class="material-icons right">fast_forward</i></button></a>
                 </div>
             </div>
             <div class="row">
@@ -206,7 +173,7 @@
                     <h3 class="brown-text text-darken-1 "><b>BOTIQUE</b></h3>
                     <p>These newly refurbished rooms are cute and compact to make your stay comfortable and memorable. They perfectly fuse the traditional with new age modern design. </p>
                     <a href="#" class="btn-small brown z-depth-2"> <strong>COST : &#8377;5500</strong></a><br><br>
-                    <a href="booking.php"><button class="btn brown waves-effect waves-light z-depth-3" type="submit" name="action">Book Now<i class="material-icons right">fast_forward</i></button></a>
+                    <a href="roombooking.php"><button class="btn brown waves-effect waves-light z-depth-3" type="submit" name="action">Book Now<i class="material-icons right">fast_forward</i></button></a>
                 </div>
             </div>
             <div class="row">
@@ -217,7 +184,7 @@
                     <h3 class="brown-text text-darken-1 "><b>DELUXE</b></h3>
                     <p>These 350 sq ft studio like rooms are the most spacious with wooden flooring will make your stay as cozy and comfortable. They come with a private balcony leaving you to gaze at the stars all night.</p>
                     <a href="#" class="btn-small brown z-depth-2"> <strong>COST : &#8377;6500</strong></a><br><br>
-                    <a href="booking.php"><button class="btn brown waves-effect waves-light z-depth-3" type="submit" name="action">Book Now<i class="material-icons right">fast_forward</i></button></a>
+                    <a href="roombooking.php"><button class="btn brown waves-effect waves-light z-depth-3" type="submit" name="action">Book Now<i class="material-icons right">fast_forward</i></button></a>
                 </div>
             </div>
             <div class="row">
@@ -228,7 +195,7 @@
                     <h3 class="brown-text text-darken-1 "><b>COTTAGE</b></h3>
                     <p>Cottage also offers many facilities to enrich your stay . Top features include free Wi-Fi in all rooms, 24-hour security, daily housekeeping, 24-hour front desk, Wi-Fi in public areas.</p>
                     <a href="#" class="btn-small brown z-depth-2"> <strong>COST : &#8377;8000</strong></a><br><br>
-                    <a href="booking.php"><button class="btn brown waves-effect waves-light z-depth-3" type="submit" name="action">Book Now<i class="material-icons right">fast_forward</i></button></a>
+                    <a href="roombooking.php"><button class="btn brown waves-effect waves-light z-depth-3" type="submit" name="action">Book Now<i class="material-icons right">fast_forward</i></button></a>
                 </div>
             </div>
         </div>
@@ -353,7 +320,7 @@
         </div>
     </section>
     <div class=" parallax-container">
-        <div class="parallax "><img src="images/hotel1.jpg " class="responsive-img "> </div>
+        <div class="parallax "><img src="images/hotel1.jpg" class="responsive-img"> </div>
     </div>
     <section class="section container scrollspy" id="facility">
         <h2 class="brown-text center "><b>FACILITIES</b></h2>
