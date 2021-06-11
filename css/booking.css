@@ -1,0 +1,21 @@
+.card .card-content .card-title {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.input-field label {
+    font-size: 24px;
+}
+
+.dropdown-content {
+    width: 100% !important;
+    height: auto !important;
+}
+
+.dds li a {
+    font-size: 20px;
+}
+
+.parallax-container {
+    height: 20vw;
+}

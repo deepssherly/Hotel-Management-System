@@ -1,0 +1,33 @@
+.parallax-container {
+    height: 350px !important;
+}
+
+.responsive-table {
+    margin-top: 2vw;
+}
+
+.dds li a {
+    font-size: 20px;
+}
+
+.dropdown-content {
+    width: 100% !important;
+    height: auto !important;
+}
+
+.modal {
+    width: 35% !important;
+    height: 28% !important;
+}
+
+#modal2 {
+    height: 67% !important;
+}
+
+.responsive-table tbody tr td {
+    font-weight: 600;
+}
+
+.responsive-table:nth-child(even) {
+    background-color: red;
+}
