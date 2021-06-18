@@ -25,12 +25,12 @@
             <a href="#" class="sidenav-trigger" data-target="link"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
                 <li>
-                    <a href="index.php"><b>HOME</b></a>
+                    <a href="home.php"><b>HOME</b></a>
                 </li>
             </ul>
             <ul id="link" class="sidenav">
                 <li>
-                    <a href="index.php"><b>HOME</b></a>
+                    <a href="home.php"><b>HOME</b></a>
                 </li>
             </ul>
         </nav>

@@ -16,7 +16,7 @@ if (isset($_GET['user_id'])) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payment</title>
+    <title>Package Booking Payment</title>
     <!-- font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <!-- Compiled and minified CSS -->
@@ -50,7 +50,7 @@ if (isset($_GET['user_id'])) {
     <div class="card container center z-depth-4">
         <div class="card-content center">
             <h4 class="brown-text center"><i><b>THE GRAND RESORT</b></i></h4><hr>
-            <h5 class="center brown-text"><strong>BOOKING DETAILS</strong></h5>
+            <h5 class="center brown-text"><strong>PACKAGE BOOKING DETAILS</strong></h5>
             <hr>
             <?php $rv=explode('-',$user['pack']);?>
             <p class="container left-align"><strong>Id </strong>:<?php echo htmlspecialchars($user['id']);?>
@@ -68,7 +68,7 @@ if (isset($_GET['user_id'])) {
             </p>
         </div>
         <div lass="card-action">
-        <div class="red-text">Check your details and proceed for transaction.<br>Once you make payment, you will not be able to cancel booking.</div>
+        <div class="red-text">Check your details and proceed for transaction.</div>
         <br>
             <form class="center"><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_HJ2OohGtgU9VfX" async></script></form>
         </div>

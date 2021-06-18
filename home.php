@@ -23,7 +23,7 @@
                     <a href="#home"><b>HOME</b></a>
                 </li>
                 <li>
-                    <a href="#category"><b>CATEGORIES</b></a>
+                    <a href="#category"><b>ACCOMMODATIONS</b></a>
                 </li>
                 <li>
                     <a href="#facility"><b>FACILITIES</b></a>
@@ -32,7 +32,7 @@
                     <a href="gallery.php"><b>GALLERY</b></a>
                 </li>
                 <li>
-                    <a href="#" class="dropdown-trigger" data-target="dropdown"><b>BOOKING</b></a>
+                    <a href="#" class="dropdown-trigger" data-target="dropdown"><b>BOOK NOW</b></a>
                     <ul id="dropdown" class="dropdown-content">
                         <li><a href="roombooking.php" class="brown-text">ROOM BOOKING</a></li>
                         <li class="divider"></li>
@@ -50,6 +50,9 @@
                         <li class="divider"></li>
                         <li><a href="packagetable.php" class="brown-text">PACKAGE BOOKING DETAILS</a></li>
                     </ul>
+                </li>
+                <li>
+                    <a href="#services"><b>SERVICES</b></a>
                 </li>
                 <li>
                     <a href="#about"><b>ABOUT</b></a>
@@ -579,6 +582,12 @@
                                 <span>Event Booking</span>
                             </label>
                         </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in">
+                                <span>Package Booking</span>
+                            </label>
+                        </p>
                     </div>
                     <div class="input-field center">
                         <button class="btn brown">Submit</button>
@@ -601,14 +610,14 @@
                     <h4><b>CONNECT US..</b></h4><br>
                     <ul>
                         <li>
-                            <a href="# " class="btn-floating btn-small brown tooltipped pulse " data-tooltip="Facebook " data-position="padding-bottom ">
+                            <a href="#" class="btn-floating btn-small brown tooltipped pulse " data-tooltip="Facebook" data-position="padding-bottom ">
                                 <i class="fab fa-facebook "></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <a href="# " class="btn-floating btn-small brown tooltipped pulse " data-tooltip="Twitter ">
-                                <i class=" fab fa-twitter "></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <a href="# " class="btn-floating btn-small brown tooltipped pulse " data-tooltip="Twitter ">
-                                <i class=" fab fa-linkedin "></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <a href="# " class="btn-floating btn-small brown tooltipped pulse " data-tooltip="Instagram ">
-                                <i class="fab fa-instagram "></i></a>
+                            <a href="#" class="btn-floating btn-small brown tooltipped pulse " data-tooltip="Twitter">
+                                <i class="fab fa-twitter"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="#" class="btn-floating btn-small brown tooltipped pulse " data-tooltip="Linkedin">
+                                <i class=" fab fa-linkedin"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="#" class="btn-floating btn-small brown tooltipped pulse " data-tooltip="Instagram">
+                                <i class="fab fa-instagram"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -620,7 +629,11 @@
             </div>
         </div>
     </section>
-    <script src=" https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <a href="#" class="to-top">
+    <i class="fas fa-chevron-up"></i>
+  </a>
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <script>
         $(document).ready(function() {

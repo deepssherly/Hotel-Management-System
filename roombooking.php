@@ -46,7 +46,23 @@ if(isset($_POST['submit'])){
     }
     $query = "insert into book(name,email,phone,room,checkin,checkout,address,noofadults,noofchildren) values('$name','$email','$phone','$room','$checkin','$checkout','$address','$noofadults','$noofchildren')";
     $result = mysqli_query($conn, $query);
+    if(!$result){
+        echo mysqli_error($conn);
+    }
+    $rv=explode('-',$room);
+    $to =$email;
+    $subject = "Your Booking Details at The Grand Resort";
+    $txt ="THE GRAND RESORT"."\n"."Room Booking Details"."\n"."Name : ".$name."\n"."Phone No : ".$phone."\n"."Email Id: ".$email."\n"."Address : ".$address."\n"."Room Booked : ".$rv[0]."\n".
+    "Arrival Date :  ".$checkin."\n".
+    "Depature Date : ".$checkout."\n".
+    "No.of.Adults : ".$noofadults."\n".
+    "No.of.Children : ".$noofchildren."\n".
+    "Amount : ".$rv[1]."\n"."You have successfully submitted your booking details!!"."\n"."You can further proceed for the payment!!"."\n"."Payment option can be viewed under the reserved section!!"."\n"."Thank you!!";
+    mail($to,$subject,$txt);
+    header('Location: home.php');
+  
 }
+
 ?>
 <html lang="en">
 
@@ -61,20 +77,7 @@ if(isset($_POST['submit'])){
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <style>
-        .card .card-content .card-title {
-            font-size: 30px;
-            font-weight: 400;
-        }
-        
-        .input-field label {
-            font-size: 24px;
-        }
-        .dropdown-content {
-            width: 100% !important;
-            height: auto !important;
-        }
-    </style>
+    <link rel="stylesheet" href="css/booking.css">
 </head>
 
 <body>
@@ -203,7 +206,7 @@ if(isset($_POST['submit'])){
                                 </div>
                             </div>
                             <div class="center">
-                            <a href="#roombooked" class="modal-trigger"><input type="submit" value="submit" class="btn brown waves-effect waves-light z-depth-4 white-text" name="submit"></a>
+                            <a href="#roombooked" class=""><input type="submit" value="submit" class="btn brown waves-effect waves-light z-depth-4 white-text" name="submit"></a>
                             </div>
                         </form>
                     </div>
@@ -211,7 +214,7 @@ if(isset($_POST['submit'])){
             </div>
         </div>
     </div>
-    <div class="footer-copyright brown darken-1 ">
+    <div class="footer-copyright brown darken-1">
         <div class="container center-align white-text">
             <b>&copy;2021 The Grand Resort</b>
         </div>
@@ -221,10 +224,10 @@ if(isset($_POST['submit'])){
             <h4>Room Booked Successfully!!</h4>
         </div>
         <div class="modal-footer">
-        <a href="home.php" class="modal-close btn">Okay</a>
+            <a href="home.php" class="modal-close btn brown waves-effect waves-light">Okay</a>
         </div>
     </div>
-    <script src=" https://code.jquery.com/jquery-3.3.1.min.js "></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <script>
         $(document).ready(function() {

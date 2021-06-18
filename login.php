@@ -43,21 +43,20 @@ if(isset($_POST['login'])){
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <style>
-        body {
-            background-image: url("images/login.jpg");
-            background-position: center;
-            background-size: cover;
-        }
-        
-        .row {
-            margin-top: 3vw;
-            margin-left: 14vw;
-        }
-        
-        .input-field label {
-            font-size: 18px;
-            font-weight: 400;
-        }
+    body {
+    background-image: url("images/login.jpg");
+    background-position: center;
+    background-size: cover;
+    }
+    .row {
+    margin-top: 3vw;
+    margin-left: 14vw;
+    }
+
+    .input-field label {
+    font-size: 18px;
+    font-weight: 400;
+    }
     </style>
 </head>
 

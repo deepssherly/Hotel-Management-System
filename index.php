@@ -10,54 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <style>
-        .carousel {
-            height: 690px !important;
-        }
-        .section {
-            padding-top: 2vw;
-            padding-bottom: 2vw;
-        }
-        
-        h2 {
-            font-size: 45px;
-            padding-bottom: 2vw;
-        }
-        
-        h3 {
-            font-size: 35px;
-        }
-        
-        p {
-            font-size: 20px;
-            font-weight: 500;
-        }
-        
-        span {
-            font-size: 22px;
-            font-weight: 600;
-        }
-        
-        .card {
-            transition: 0.5s;
-        }
-        
-        .card:hover {
-            transform: scale(1.05);
-        }
-        
-        #review {
-            width: 25%;
-        }
-        
-        #tab {
-            margin-left: 15vw;
-        }
-        #modal{
-            width:40%;
-            height:22%;
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="undefined" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -70,7 +24,7 @@
                     <a href="#home"><b>HOME</b></a>
                 </li>
                 <li>
-                    <a href="#category"><b>CATEGORIES</b></a>
+                    <a href="#category"><b>ACCOMMODATIONS</b></a>
                 </li>
                 <li>
                     <a href="#facility"><b>FACILITIES</b></a>
@@ -79,25 +33,11 @@
                     <a href="gallery.php"><b>GALLERY</b></a>
                 </li>
                 <li>
-                    <a href="#modal" class="modal-trigger"><b>BOOKING</b></a>
-                    <!--<ul id="dropdown" class="dropdown-content">
-                        <li><a href="booking.php" class="brown-text">ROOM BOOKING</a></li>
-                        <li class="divider"></li>
-                        <li><a href="eventbooking.php" class="brown-text">EVENT BOOKING</a></li>
-                        <li class="divider"></li>
-                        <li><a href="packagebooking.php" class="brown-text">PACKAGE BOOKING</a></li>
-                    </ul>-->
+                    <a href="#modal" class="modal-trigger"><b>BOOK NOW</b></a>
                 </li>
-                <!--<li>
-                    <a href="#" class="dropdown-trigger" data-target="dropdown1"><b>RESERVED</b></a>
-                    <ul id="dropdown1" class="dropdown-content">
-                        <li><a href="mybooking.php" class="brown-text">ROOM BOOKING DETAILS</a></li>
-                        <li class="divider"></li>
-                        <li><a href="eventtable.php" class="brown-text">EVENT BOOKING DETAILS</a></li>
-                        <li class="divider"></li>
-                        <li><a href="packagetable.php" class="brown-text">PACKAGE BOOKING DETAILS</a></li>
-                    </ul>
-                </li>-->
+                <li>
+                    <a href="#services"><b>SERVICES</b></a>
+                </li>
                 <li>
                     <a href="#about"><b>ABOUT</b></a>
                 </li>
@@ -110,7 +50,7 @@
             </ul>
             <ul id="link" class="sidenav">
                 <li>
-                    <a href="home"><b>HOME</b></a>
+                    <a href="#home"><b>HOME</b></a>
                 </li>
                 <li>
                     <a href="#category"><b>CATEGORIES</b></a>
@@ -149,7 +89,7 @@
             <a class="carousel-item" href="#one!"><img src="images/img4.jpg"></a>
             <a class="carousel-item" href="#two!"><img src="images/img1.jpg"></a>
             <a class="carousel-item" href="#three!"><img src="images/img2.jpg"></a>
-            <a class="carousel-item" href="#four!"><img src="images/service.png"></a>
+            <a class="carousel-item" href="#four!"><img src="images/imgg.jpg"></a>
             <a class="carousel-item" href="#five!"><img src="images/img5.jpg"></a>
         </div>
     </section>
@@ -364,61 +304,61 @@
             </div>
         </div>
     </section>
-    <div class=" parallax-container">
-        <div class="parallax "><img src="images/hotel1.jpg " class="responsive-img "> </div>
+    <div class="parallax-container">
+        <div class="parallax"><img src="images/hotel1.jpg" class="responsive-img"> </div>
     </div>
     <section class="section container scrollspy" id="facility">
-        <h2 class="brown-text center "><b>FACILITIES</b></h2>
-        <div class="row ">
-            <div class="col s12 l4 ">
+        <h2 class="brown-text center"><b>FACILITIES</b></h2>
+        <div class="row">
+            <div class="col s12 l4">
                 <div>
-                    <a href="# " class="btn-floating btn-large brown pulse "><i class=" material-icons left ">wifi</i></a>&nbsp;&nbsp;&nbsp;
+                    <a href="#" class="btn-floating btn-large brown pulse"><i class="material-icons left">wifi</i></a>&nbsp;&nbsp;&nbsp;
                     <span>WiFi Access</span>
                 </div> <br>
                 <div>
-                    <a href="# " class="btn-floating btn-large brown pulse "><i class=" material-icons left ">live_tv</i></a>&nbsp;&nbsp;&nbsp;
+                    <a href="#" class="btn-floating btn-large brown pulse"><i class="material-icons left">live_tv</i></a>&nbsp;&nbsp;&nbsp;
                     <span>Cable TV</span>
                 </div><br>
                 <div>
-                    <a href="# " class="btn-floating btn-large brown pulse "><i class=" material-icons left ">pool</i></a>&nbsp;&nbsp;&nbsp;
+                    <a href="#" class="btn-floating btn-large brown pulse"><i class="material-icons left">pool</i></a>&nbsp;&nbsp;&nbsp;
                     <span>Swimming Pool</span>
                 </div><br>
                 <div>
-                    <a href="# " class="btn-floating btn-large brown pulse "><i class=" material-icons left ">yard</i></a>&nbsp;&nbsp;&nbsp;
+                    <a href="#" class="btn-floating btn-large brown pulse"><i class="material-icons left">yard</i></a>&nbsp;&nbsp;&nbsp;
                     <span>Garden Area</span>
                 </div><br>
                 <div>
-                    <a href="# " class="btn-floating btn-large brown pulse "><i class=" material-icons left ">elevator</i></a>&nbsp;&nbsp;&nbsp;
+                    <a href="#" class="btn-floating btn-large brown pulse"><i class="material-icons left">elevator</i></a>&nbsp;&nbsp;&nbsp;
                     <span>Elevator/Lift</span>
                 </div><br>
                 <div>
-                    <a href="# " class="btn-floating btn-large brown pulse "><i class=" material-icons left ">games</i></a>&nbsp;&nbsp;&nbsp;
+                    <a href="#" class="btn-floating btn-large brown pulse"><i class="material-icons left">games</i></a>&nbsp;&nbsp;&nbsp;
                     <span>Indoor & Outdoor Games</span>
                 </div>
             </div>
-            <div class="col s12 l5 offset-l3 ">
+            <div class="col s12 l5 offset-l3">
                 <div>
-                    <a href="# " class="btn-floating btn-large brown pulse "><i class=" material-icons left ">web</i></a>&nbsp;&nbsp;&nbsp;
+                    <a href="#" class="btn-floating btn-large brown pulse"><i class="material-icons left">web</i></a>&nbsp;&nbsp;&nbsp;
                     <span>Newspapers</span>
                 </div> <br>
                 <div>
-                    <a href="# " class="btn-floating btn-large brown pulse "><i class=" material-icons left ">local_dining</i></a>&nbsp;&nbsp;&nbsp;
+                    <a href="#" class="btn-floating btn-large brown pulse"><i class="material-icons left">local_dining</i></a>&nbsp;&nbsp;&nbsp;
                     <span>Complimentary Breakfast</span>
                 </div><br>
                 <div>
-                    <a href="# " class="btn-floating btn-large brown pulse "><i class=" material-icons left ">local_drink</i></a>&nbsp;&nbsp;&nbsp;
+                    <a href="#" class="btn-floating btn-large brown pulse"><i class="material-icons left">local_drink</i></a>&nbsp;&nbsp;&nbsp;
                     <span>Mineral Water</span>
                 </div><br>
                 <div>
-                    <a href="# " class="btn-floating btn-large brown pulse "><i class=" material-icons left ">balcony</i></a>&nbsp;&nbsp;&nbsp;
+                    <a href="#" class="btn-floating btn-large brown pulse"><i class="material-icons left">balcony</i></a>&nbsp;&nbsp;&nbsp;
                     <span>Balcony</span>
                 </div><br>
                 <div>
-                    <a href="# " class="btn-floating btn-large brown pulse "><i class=" material-icons left ">live_tv</i></a>&nbsp;&nbsp;&nbsp;
+                    <a href="#" class="btn-floating btn-large brown pulse"><i class="material-icons left">live_tv</i></a>&nbsp;&nbsp;&nbsp;
                     <span>CCTV</span>
                 </div><br>
                 <div>
-                    <a href="# " class="btn-floating btn-large brown pulse "><i class=" material-icons left ">event</i></a>&nbsp;&nbsp;&nbsp;
+                    <a href="#" class="btn-floating btn-large brown pulse"><i class="material-icons left">event</i></a>&nbsp;&nbsp;&nbsp;
                     <span>Events</span>
                 </div>
 
@@ -429,14 +369,14 @@
         <div class="parallax"><img src="images/hotel2.jpg" class="responsive-img"> </div>
     </div>
     <section class="section container scrollspy" id="about">
-        <div class="row ">
-            <h2 class="brown-text center "><b>ABOUT THE GRAND RESORT</b></h2>
-            <div class="col s12 l4 ">
-                <video width="500 " height="550 " autoplay loop>  
-                    <source src="images/aboutvideo.mp4 " type="video/mp4"/>   
+        <div class="row">
+            <h2 class="brown-text center"><b>ABOUT THE GRAND RESORT</b></h2>
+            <div class="col s12 l4">
+                <video width="500" height="550" autoplay loop>  
+                    <source src="images/aboutvideo.mp4" type="video/mp4"/>   
                  </video>
             </div>
-            <div class="col s12 l6 offset-l2 ">
+            <div class="col s12 l6 offset-l2">
                 <p>The GRAND RESORT provides you an amazing luzury facilities,offers and events. Year after year it has been an immovable symbol of national integrity where people from all races and background come together, as one, for wholesome family
                     entertainment.At The GRAND RESORT we are committed to delight our customers with a unique blend of education and entertainment, coupled by an unwavering dedication to world peace, family harmony and spiritual joy. We take great pleasure
                     to share with you the good news that various exciting and promising value additions are being offered by your favourite The GRAND RESORT, exclusively for your enjoyment.You will experience the same luxury as a hotel, yet in a homely
@@ -624,6 +564,12 @@
                                 <span>Event Booking</span>
                             </label>
                         </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in">
+                                <span>Package Booking</span>
+                            </label>
+                        </p>
                     </div>
                     <div class="input-field center">
                         <button class="btn brown">Submit</button>
@@ -646,13 +592,13 @@
                     <h4><b>CONNECT US..</b></h4><br>
                     <ul>
                         <li>
-                            <a href="# " class="btn-floating btn-small brown tooltipped pulse " data-tooltip="Facebook " data-position="padding-bottom ">
+                            <a href="#" class="btn-floating btn-small brown tooltipped pulse " data-tooltip="Facebook" data-position="padding-bottom ">
                                 <i class="fab fa-facebook "></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <a href="# " class="btn-floating btn-small brown tooltipped pulse " data-tooltip="Twitter ">
+                            <a href="#" class="btn-floating btn-small brown tooltipped pulse " data-tooltip="Twitter">
                                 <i class=" fab fa-twitter "></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <a href="# " class="btn-floating btn-small brown tooltipped pulse " data-tooltip="Twitter ">
+                            <a href="#" class="btn-floating btn-small brown tooltipped pulse " data-tooltip="Linkedin">
                                 <i class=" fab fa-linkedin "></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <a href="# " class="btn-floating btn-small brown tooltipped pulse " data-tooltip="Instagram ">
+                            <a href="#" class="btn-floating btn-small brown tooltipped pulse " data-tooltip="Instagram">
                                 <i class="fab fa-instagram "></i></a>
                         </li>
                     </ul>
@@ -665,7 +611,11 @@
             </div>
         </div>
     </section>
-    <script src=" https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <a href="#" class="to-top">
+    <i class="fas fa-chevron-up"></i>
+  </a>
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <script>
         $(document).ready(function() {

@@ -1,5 +1,6 @@
 <?php
 include('config.php');
+$val='1';
 $query="select * from event";
 $res = mysqli_query($conn, $query);
 $records = mysqli_fetch_all($res, MYSQLI_ASSOC);
@@ -20,7 +21,7 @@ if(isset($_POST['delete'])){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Booking History</title>
+    <title>Event Booking History</title>
     <!-- font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <!-- Compiled and minified CSS -->
@@ -109,9 +110,10 @@ if(isset($_POST['delete'])){
     <div id="modal2" class="modal">
         <div class="modal-content">
         <h4 class="brown-text center"><i><b>THE GRAND RESORT</b></i></h4><hr>
-            <h5 class="center brown-text"><strong>BOOKING DETAILS</strong></h5>
+            <h5 class="center brown-text"><strong>EVENT BOOKING DETAILS</strong></h5>
             <hr>
-            <p class="container left-align"><strong>Id </strong>: <?php echo $record['id']; ?>
+         
+           <p class="container left-align"><strong>Id </strong>: <?php echo $record['id']; ?>
                 <br><strong>Name </strong>: <?php echo $record['name']; ?>
                 <br><strong>Phone No</strong>: <?php echo $record['phone']; ?>
                 <br><strong>Email Id</strong>: <?php echo $record['email']; ?>

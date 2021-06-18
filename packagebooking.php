@@ -46,6 +46,16 @@ if(isset($_POST['submit'])){
     }
     $query = "insert into package(name,email,phone,pack,checkin,checkout,address,noofadults,noofchildren) values('$name','$email','$phone','$pack','$checkin','$checkout','$address','$noofadults','$noofchildren')";
     $result = mysqli_query($conn, $query);
+    $rv=explode('-',$pack);
+    $to =$email;
+    $subject = "Your Booking Details at The Grand Resort";
+    $txt ="THE GRAND RESORT"."\n"."Package Booking Details"."\n"."Name : ".$name."\n"."Phone No : ".$phone."\n"."Email Id: ".$email."\n"."Address : ".$address."\n"."Room Booked : ".$rv[0]."\n".
+    "Arrival Date :  ".$checkin."\n".
+    "Depature Date : ".$checkout."\n".
+    "No.of.Adults : ".$noofadults."\n".
+    "No.of.Children : ".$noofchildren."\n".
+    "Amount : ".$rv[1]."\n"."You have successfully submitted your booking details!!"."\n"."You can further proceed for the payment!!"."\n"."Payment option can be viewed under the reserved section!!"."\n"."Thank you!!";
+    mail($to,$subject,$txt);
     header('Location: home.php');
 }
 
@@ -56,7 +66,7 @@ if(isset($_POST['submit'])){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Room Booking</title>
+    <title>Package Booking</title>
     <!-- font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <!-- Compiled and minified CSS -->
@@ -189,7 +199,7 @@ if(isset($_POST['submit'])){
                                 </div>
                             </div>
                             <div class="center">
-                            <input type="submit" value="submit" class="btn brown waves-effect waves-light z-depth-4 white-text" name="submit">
+                            <a href="#roombooked" class="modal-trigger"><input type="submit" value="submit" class="btn brown waves-effect waves-light z-depth-4 white-text" name="submit"></a>
                             </div>
                            
                         </form>
@@ -201,6 +211,14 @@ if(isset($_POST['submit'])){
     <div class="footer-copyright brown darken-1 ">
         <div class="container center-align white-text">
             <b>&copy;2021 The Grand Resort</b>
+        </div>
+    </div>
+    <div class="modal" id="roombooked">
+        <div class="modal-content">
+            <h4>Room Booked Successfully!!</h4>
+        </div>
+        <div class="modal-footer">
+            <a href="home.php" class="modal-close btn brown waves-effect waves-light">Okay</a>
         </div>
     </div>
     <script src=" https://code.jquery.com/jquery-3.3.1.min.js "></script>

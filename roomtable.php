@@ -20,43 +20,14 @@ if(isset($_POST['delete'])){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Booking History</title>
+    <title>Room Booking History</title>
     <!-- font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <style>
-        .parallax-container {
-            height: 350px !important;
-        }
-        
-        .responsive-table {
-            margin-top: 2vw;
-        }
-        
-        .dds li a {
-            font-size: 20px;
-        }
-        
-        .dropdown-content {
-            width: 100% !important;
-            height: auto !important;
-        }
-        
-        .modal {
-            width: 35% !important;
-            height: 28% !important;
-        }
-        
-        #modal2 {
-            height: 67% !important;
-        }
-        .responsive-table tbody tr td{
-            font-weight:600;
-        }
-    </style>
+    <link rel="stylesheet" href="css/table.css">
 </head>
 
 <body>
@@ -80,7 +51,7 @@ if(isset($_POST['delete'])){
         <div class="parallax">
             <img src="images/booking.jpg" class="responsive-img"> </div>
     </div>
-    <div >
+    <div>
         <table class="responsive-table highlight z-depth-5 centered #fce4ec pink lighten-5 striped bordered">
             <thead>
                 <tr>
@@ -138,7 +109,7 @@ if(isset($_POST['delete'])){
     <div id="modal2" class="modal">
         <div class="modal-content">
         <h4 class="brown-text center"><i><b>THE GRAND RESORT</b></i></h4><hr>
-            <h5 class="center brown-text"><strong>BOOKING DETAILS</strong></h5>
+            <h5 class="center brown-text"><strong>ROOM BOOKING DETAILS</strong></h5>
             <hr>
             <p class="container left-align"><strong>Id </strong>: <?php echo $record['id']; ?>
                 <br><strong>Name </strong>: <?php echo $record['name']; ?>
@@ -168,12 +139,6 @@ if(isset($_POST['delete'])){
             $('#modal2').modal();
         });
         
-    </script>
-    <script>
-    // $(document).ready(function(){
-    //     $('.button_to_deactivate').addClass('disabled');
-    // });
-
     </script>
 </body>
 </html>

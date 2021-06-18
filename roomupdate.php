@@ -35,32 +35,14 @@ if(isset($_POST['update'])){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Update</title>
+    <title>Room Booking Update</title>
     <!-- font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <style>
-        .card .card-content .card-title {
-            font-size: 30px;
-            font-weight: 400;
-        }
-        
-        .input-field label {
-            font-size: 24px;
-        }
-        
-        .dds li a {
-            font-size: 20px;
-        }
-        
-        .dropdown-content {
-            width: 100% !important;
-            height: auto !important;
-        }
-    </style>
+    <link rel="stylesheet" href="css/booking.css">
 </head>
 
 <body>

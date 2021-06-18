@@ -37,6 +37,14 @@ if(isset($_POST['submit'])){
     }
     $query = "insert into event(name,email,phone,eventname,date,time) values('$name','$email','$phone','$eventname','$date','$time')";
     $result = mysqli_query($conn, $query);
+    $rv=explode('-',$eventname);
+    $to =$email;
+    $subject = "Your Booking Details at The Grand Resort";
+    $txt ="THE GRAND RESORT"."\n"."Event Booking Details"."\n"."Name : ".$name."\n"."Phone No : ".$phone."\n"."Email Id: ".$email."\n"."Event Booked : ".$rv[0]."\n".
+    "Date :  ".$date."\n".
+    "Time : ".$time."\n".
+    "Amount : ".$rv[1]."\n"."You have successfully submitted your booking details!!"."\n"."You can further proceed for the payment!!"."\n"."Payment option can be viewed under the reserved section!!"."\n"."Thank you!!";
+    mail($to,$subject,$txt);
     header('Location: home.php');
 }
 ?>
@@ -160,18 +168,29 @@ if(isset($_POST['submit'])){
                                 </div>
                             </div>
                             <div class="center">
-                            <input type="submit" value="submit" class="btn brown waves-effect waves-light z-depth-4 white-text" name="submit">
+                            <a href="#roombooked" class="modal-trigger"><input type="submit" value="submit" class="btn brown waves-effect waves-light z-depth-4 white-text" name="submit"></a>
                             </div>
+                           
                         </form>
-
                     </div>
-
-
                 </div>
             </div>
         </div>
     </div>
-    <script src=" https://code.jquery.com/jquery-3.3.1.min.js "></script>
+    <div class="footer-copyright brown darken-1">
+        <div class="container center-align white-text">
+            <b>&copy;2021 The Grand Resort</b>
+        </div>
+    </div>
+    <div class="modal" id="roombooked">
+        <div class="modal-content">
+            <h4>Room Booked Successfully!!</h4>
+        </div>
+        <div class="modal-footer">
+            <a href="home.php" class="modal-close btn brown waves-effect waves-light">Okay</a>
+        </div>
+    </div>
+    <script src=" https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js "></script>
     <script>
         $(document).ready(function() {
