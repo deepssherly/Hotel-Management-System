@@ -29,7 +29,7 @@
                     <a href="#facility"><b>FACILITIES</b></a>
                 </li>
                 <li>
-                    <a href="gallery.php"><b>GALLERY</b></a>
+                    <a href="galleryhome.php"><b>GALLERY</b></a>
                 </li>
                 <li>
                     <a href="#" class="dropdown-trigger" data-target="dropdown"><b>BOOK NOW</b></a>

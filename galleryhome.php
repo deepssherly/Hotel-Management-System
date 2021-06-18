@@ -15,6 +15,7 @@
         .carousel {
             height: 480px !important;
         }
+
     </style>
 </head>
 
@@ -121,7 +122,6 @@
             <b>&copy;2021 The Grand Resort</b>
         </div>
     </div>
-
     <script src=" https://code.jquery.com/jquery-3.3.1.min.js "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js "></script>
     <script>

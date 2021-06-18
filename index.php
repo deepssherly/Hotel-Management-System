@@ -30,7 +30,7 @@
                     <a href="#facility"><b>FACILITIES</b></a>
                 </li>
                 <li>
-                    <a href="gallery.php"><b>GALLERY</b></a>
+                    <a href="galleryindex.php"><b>GALLERY</b></a>
                 </li>
                 <li>
                     <a href="#modal" class="modal-trigger"><b>BOOK NOW</b></a>
