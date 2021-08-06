@@ -624,10 +624,11 @@
             </div>
         </div>
         <div class="footer-copyright brown darken-1">
-            <div class="container center-align">
-                <b>&copy;2021 The Grand Resort</b>
-            </div>
+        <div class="container center-align white-text">
+            <b>&copy;2021 The Grand Resort</b><br>
+            <b>Made with by Deepthi Sherly J</b>
         </div>
+    </div>
     </section>
     <a href="#" class="to-top">
     <i class="fas fa-chevron-up"></i>

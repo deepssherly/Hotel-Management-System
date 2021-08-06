@@ -607,7 +607,8 @@
         </div>
         <div class="footer-copyright brown darken-1">
             <div class="container center-align">
-                <b>&copy;2021 The Grand Resort</b>
+                <b>&copy;2021 The Grand Resort</b><br>
+                <b>Made with by Deepthi Sherly J</b>
             </div>
         </div>
     </section>

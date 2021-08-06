@@ -170,9 +170,10 @@ if(isset($_POST['update'])){
             </div>
         </div>
     </div>
-    <div class="footer-copyright brown darken-1 ">
+    <div class="footer-copyright brown darken-1">
         <div class="container center-align white-text">
-            <b>&copy;2021 The Grand Resort</b>
+            <b>&copy;2021 The Grand Resort</b><br>
+            <b>Made with by Deepthi Sherly J</b>
         </div>
     </div>
     <script src=" https://code.jquery.com/jquery-3.3.1.min.js "></script>
